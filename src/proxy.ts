@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const allowedOrigins = ["https://acme.com", "https://my-app.org"];
+const allowedOrigins = ["http://127.0.0.1", "https://secretppl608.github.io"];
 
 const corsOptions = {
     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
