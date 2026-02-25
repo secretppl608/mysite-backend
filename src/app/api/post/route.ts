@@ -23,6 +23,7 @@ export async function POST(request: NextRequest) {
             return NextResponse.json(
                 {
                     reason: "we_dont_know_what_the_hell_because_database_is_crazy",
+                    error: error
                 },
                 { status: 500 },
             );
