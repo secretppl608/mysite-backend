@@ -31,7 +31,6 @@ export async function POST(request: NextRequest) {
         pool.end();
         return NextResponse.json({ reason: "OK" }, { status: 200 });
     } else {
-        pool.end();
         return NextResponse.json(
             { reason: "no_title_or_content" },
             { status: 400 },
