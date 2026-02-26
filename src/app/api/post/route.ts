@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
 import { Client, Pool } from "pg";
 export async function POST(request: NextRequest) {
     const pool = new Client({
