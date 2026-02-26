@@ -3,9 +3,9 @@ import { Client, Pool } from "pg";
 export async function POST(request: NextRequest) {
     const pool = new Client({
         host: "db.zmzbyripoxydefleryhn.supabase.co",
-        port: 6543,
+        port: 5432,
         database: "postgres",
-        user: "postgres.zmzbyripoxydefleryhn",
+        user: 'postgres',
         password: process.env.DB_PSW,
         connectionTimeoutMillis: 5000,
         ssl: {
